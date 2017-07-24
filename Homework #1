@@ -1,0 +1,27 @@
+var str = "1234567890987654321"
+
+var goodArray: [Character] = []
+
+for character in str.characters {
+    goodArray.append(character)
+}
+print(goodArray)
+var badStr:String = ""
+
+for i in  0  ... (goodArray.count - 1){
+    badStr += String(goodArray[goodArray.count - 1 - i])
+}
+
+print(badStr)
+
+
+let characters = Array(str.characters)
+
+
+
+if str == badStr{
+    print("TRUE")
+}
+else {
+    print("FALSE")
+}
